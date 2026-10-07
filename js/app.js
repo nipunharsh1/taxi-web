@@ -600,6 +600,13 @@ document.addEventListener("DOMContentLoaded", () => {
     mobileNavToggle.addEventListener("click", () => {
       navMenu.classList.toggle("open");
     });
+
+    // Close menu when a navigation link is clicked
+    navMenu.querySelectorAll(".nav-link").forEach(link => {
+      link.addEventListener("click", () => {
+        navMenu.classList.remove("open");
+      });
+    });
   }
 
   // Pre-fill Date & Time inputs
