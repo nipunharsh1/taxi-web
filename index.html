@@ -1,0 +1,767 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ZENITH CABS & LUXURY TOURS | 24/7 Islandwide Taxi, Airport Transfers & Chauffeur Hire</title>
+  <meta name="description" content="Zenith Cabs & Tours is Sri Lanka's premier 24/7 chauffeur transport service. Book airport transfers, luxury sedans, family vans, tour coaches and outstation cabs at transparent fixed rates.">
+  <meta name="keywords" content="taxi service, airport transfer, cab booking, car hire sri lanka, van hire, tour packages, chauffeur drive, outstation taxi">
+  
+  <!-- Favicon SVG -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%23f59e0b'/><path d='M25 65 L45 35 L75 35 L55 65 Z' fill='%23080c14'/><circle cx='40' cy='65' r='7' fill='%23080c14'/><circle cx='68' cy='65' r='7' fill='%23080c14'/></svg>">
+  
+  <!-- FontAwesome 6 CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ================= TOP EMERGENCY & ANNOUNCEMENT BAR ================= -->
+  <aside id="top-emergency-bar" aria-label="Quick Contact & Currency Settings">
+    <div class="container top-bar-inner">
+      <div class="top-bar-left">
+        <span class="status-indicator">
+          <span class="status-dot"></span>
+          <strong>24/7 Dispatch Desk Online</strong> (Average arrival: 10-15 mins)
+        </span>
+        <span style="opacity: 0.4;">|</span>
+        <a href="tel:+94112899000" class="hotline-pill" id="top-hotline-link">
+          <i class="fas fa-phone-alt"></i> Hotline: +94 11 289 9000
+        </a>
+      </div>
+
+      <div class="top-bar-right">
+        <label for="currency-select" class="visually-hidden" style="display:none;">Currency</label>
+        <select id="currency-select" class="currency-select" aria-label="Select Currency">
+          <option value="LKR" selected>Rs. LKR</option>
+          <option value="USD">$ USD</option>
+          <option value="EUR">€ EUR</option>
+          <option value="GBP">£ GBP</option>
+        </select>
+
+        <button id="theme-toggle-btn" class="theme-toggle-btn" aria-label="Toggle Dark and Light theme" title="Switch Theme">
+          <i class="fas fa-sun"></i>
+          <span style="font-size: 0.75rem;">Theme</span>
+        </button>
+
+        <a href="#driver-and-tools-section" class="btn btn-secondary btn-sm" id="top-driver-link" style="padding: 0.2rem 0.65rem;">
+          <i class="fas fa-id-card"></i> Driver Portal
+        </a>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ================= MAIN NAVIGATION ================= -->
+  <header id="main-navbar">
+    <nav class="nav-container" aria-label="Primary Navigation">
+      <a href="#hero-section" class="brand-logo" id="brand-logo-link">
+        <div class="brand-logo-icon">
+          <i class="fas fa-taxi"></i>
+        </div>
+        <div>
+          <div class="brand-title">ZENITH<span>CABS</span></div>
+          <div class="brand-subtitle">& LUXURY TOURS</div>
+        </div>
+      </a>
+
+      <ul class="nav-menu" id="nav-menu">
+        <li><a href="#booking-engine-section" class="nav-link active">Book a Ride</a></li>
+        <li><a href="#fleet-showcase-section" class="nav-link">Fleet & Rates</a></li>
+        <li><a href="#calculator-section" class="nav-link">Fare Estimator</a></li>
+        <li><a href="#tour-packages-section" class="nav-link">Tour Packages</a></li>
+        <li><a href="#services-section" class="nav-link">Services</a></li>
+        <li><a href="#driver-and-tools-section" class="nav-link">Track Ride</a></li>
+        <li><a href="#contact-section" class="nav-link">Contact</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <a href="https://wa.me/94771234567?text=Hi%20Zenith%20Cabs,%20I%20need%20an%20instant%20cab%20quote" target="_blank" class="btn btn-secondary btn-sm" id="nav-whatsapp-cta">
+          <i class="fab fa-whatsapp" style="color: #25d366;"></i> WhatsApp
+        </a>
+        <a href="#booking-engine-section" class="btn btn-primary btn-sm" id="nav-instant-book-cta">
+          <i class="fas fa-bolt"></i> Instant Quote
+        </a>
+        <button class="nav-toggle-btn" id="mobile-nav-toggle" aria-label="Toggle navigation menu">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- ================= HERO SECTION ================= -->
+  <section id="hero-section">
+    <div class="container hero-grid">
+      <div class="hero-content">
+        <span class="section-badge">
+          <i class="fas fa-shield-alt"></i> Guaranteed Fixed Islandwide Rates
+        </span>
+        <h1 class="hero-title">
+          Elevate Every Journey With <span class="gradient-text">Zenith Cabs</span>
+        </h1>
+        <p class="hero-description">
+          Experience Sri Lanka’s most dependable 24/7 private transport. From punctual Bandaranaike Airport (BIA) transfers and executive city drops to scenic hill country tours with verified, English-speaking chauffeurs.
+        </p>
+
+        <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+          <a href="#booking-engine-section" class="btn btn-primary" id="hero-book-btn">
+            <i class="fas fa-calendar-check"></i> Book Online Now
+          </a>
+          <a href="#fleet-showcase-section" class="btn btn-secondary" id="hero-fleet-btn">
+            <i class="fas fa-car-side"></i> View Vehicle Fleet
+          </a>
+        </div>
+
+        <div class="hero-stats-row">
+          <div class="stat-item">
+            <h3>1,200+</h3>
+            <p>Active Vehicles Islandwide</p>
+          </div>
+          <div class="stat-item">
+            <h3>4.9 / 5</h3>
+            <p>18,000+ Verified Reviews</p>
+          </div>
+          <div class="stat-item">
+            <h3>100%</h3>
+            <p>On-Time Chauffeur Guarantee</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-visual-wrapper">
+        <div class="hero-image-card">
+          <img src="assets/images/hero-fleet.jpg" alt="Zenith Cabs Luxury Fleet and Chauffeur at Hotel Entrance" id="hero-main-img">
+          <div class="hero-floating-badge">
+            <div style="display:flex; align-items:center; gap:0.75rem;">
+              <div style="width:12px; height:12px; border-radius:50%; background:var(--accent-emerald); box-shadow:0 0 10px var(--accent-emerald);"></div>
+              <div class="floating-badge-info">
+                <h4>Chauffeur Fleet Ready</h4>
+                <p>Available in Colombo, Kandy, Galle, BIA Airport & Jaffna</p>
+              </div>
+            </div>
+            <a href="tel:+94112899000" class="btn btn-primary btn-sm" style="padding:0.4rem 0.8rem; font-size:0.8rem;">
+              <i class="fas fa-phone-alt"></i> Call Now
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= BOOKING ENGINE WIDGET ================= -->
+  <section id="booking-engine-section">
+    <div class="container">
+      <div class="booking-card" id="main-booking-widget">
+        <!-- Trip Type Tabs -->
+        <div class="trip-tabs" role="tablist">
+          <button class="trip-tab-btn tab-btn active" data-trip="oneway" id="tab-trip-oneway" role="tab">
+            <i class="fas fa-arrow-right"></i> One-Way Drop
+          </button>
+          <button class="trip-tab-btn tab-btn" data-trip="roundtrip" id="tab-trip-roundtrip" role="tab">
+            <i class="fas fa-exchange-alt"></i> Round Trip
+          </button>
+          <button class="trip-tab-btn tab-btn" data-trip="airport" id="tab-trip-airport" role="tab">
+            <i class="fas fa-plane-departure"></i> Airport Express
+          </button>
+          <button class="trip-tab-btn tab-btn" data-trip="rental" id="tab-trip-rental" role="tab">
+            <i class="fas fa-clock"></i> Day / Hourly Rental
+          </button>
+        </div>
+
+        <div class="booking-form-body">
+          <form id="ride-booking-form">
+            <!-- Row 1: Locations -->
+            <div class="form-grid-row">
+              <div class="form-group">
+                <label for="pickup-location" class="form-label">
+                  <i class="fas fa-map-marker-alt" style="color:var(--accent-gold);"></i> Pickup Address / City
+                </label>
+                <div class="form-input-wrapper">
+                  <i class="fas fa-location-arrow input-icon"></i>
+                  <input type="text" id="pickup-location" class="form-control" list="locations-datalist" placeholder="e.g. Colombo Fort or BIA Airport" required value="Bandaranaike Intl Airport (CMB / BIA)">
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="dropoff-location" class="form-label">
+                  <i class="fas fa-flag-checkered" style="color:var(--accent-gold);"></i> Destination / Drop Location
+                </label>
+                <div class="form-input-wrapper">
+                  <i class="fas fa-map-pin input-icon"></i>
+                  <input type="text" id="dropoff-location" class="form-control" list="locations-datalist" placeholder="e.g. Kandy, Galle Fort, Ella..." required value="Kandy (Temple of Tooth)">
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="booking-date" class="form-label">
+                  <i class="far fa-calendar-alt"></i> Travel Date
+                </label>
+                <div class="form-input-wrapper">
+                  <i class="far fa-calendar input-icon"></i>
+                  <input type="date" id="booking-date" class="form-control" required>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="booking-time" class="form-label">
+                  <i class="far fa-clock"></i> Pickup Time
+                </label>
+                <div class="form-input-wrapper">
+                  <i class="far fa-clock input-icon"></i>
+                  <input type="time" id="booking-time" class="form-control" required>
+                </div>
+              </div>
+            </div>
+
+            <!-- Vehicle Selection Cards inside Booking Form -->
+            <div class="vehicle-selector-panel">
+              <h4>
+                <span><i class="fas fa-car"></i> Select Vehicle Category</span>
+                <small style="font-size:0.75rem; color:var(--text-muted); font-weight:normal;">Live fare recalculates automatically</small>
+              </h4>
+              <div class="vehicle-choice-grid" id="booking-vehicle-choices">
+                <!-- Dynamically generated vehicle options -->
+              </div>
+            </div>
+
+            <!-- Row 2: Passenger & Contact Info -->
+            <div class="form-grid-row">
+              <div class="form-group">
+                <label for="passenger-name" class="form-label">
+                  <i class="far fa-user"></i> Passenger Full Name
+                </label>
+                <div class="form-input-wrapper">
+                  <i class="fas fa-user-tag input-icon"></i>
+                  <input type="text" id="passenger-name" class="form-control" placeholder="Your Name" required value="Alexander Wright">
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="passenger-phone" class="form-label">
+                  <i class="fas fa-phone"></i> WhatsApp / Mobile Phone
+                </label>
+                <div class="form-input-wrapper">
+                  <i class="fas fa-mobile-alt input-icon"></i>
+                  <input type="tel" id="passenger-phone" class="form-control" placeholder="+94 7X XXX XXXX" required value="+94 77 123 4567">
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="passenger-count" class="form-label">
+                  <i class="fas fa-users"></i> Passengers Count
+                </label>
+                <div class="form-input-wrapper">
+                  <i class="fas fa-user-friends input-icon"></i>
+                  <select id="passenger-count" class="form-control">
+                    <option value="1">1 Passenger</option>
+                    <option value="2" selected>2 Passengers</option>
+                    <option value="3">3 Passengers</option>
+                    <option value="4">4 Passengers</option>
+                    <option value="5-8">5 - 8 (Van required)</option>
+                    <option value="9+">9+ (Mini Coach)</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="booking-notes" class="form-label">
+                  <i class="far fa-comment-dots"></i> Flight No. / Special Note
+                </label>
+                <div class="form-input-wrapper">
+                  <i class="fas fa-sticky-note input-icon"></i>
+                  <input type="text" id="booking-notes" class="form-control" placeholder="e.g. Flight UL-504 arriving 8:30pm">
+                </div>
+              </div>
+            </div>
+
+            <!-- Booking Actions & Instant Fare Estimation Row -->
+            <div class="booking-actions-row">
+              <div class="estimate-summary-box">
+                <div>
+                  <div class="estimate-label">Calculated Trip Quote</div>
+                  <div class="estimate-amount" id="booking-estimated-price">Rs. 0</div>
+                </div>
+                <div style="border-left:1px solid var(--border-subtle); padding-left:1.25rem;">
+                  <div class="estimate-distance" id="booking-estimated-distance">Distance: Estimating...</div>
+                  <div style="font-size:0.75rem; color:var(--accent-emerald);">
+                    <i class="fas fa-check-circle"></i> Tolls & chauffeur allowance included
+                  </div>
+                </div>
+              </div>
+
+              <div style="display:flex; gap:1rem; align-items:center;">
+                <button type="submit" class="btn btn-primary" id="btn-submit-booking" style="padding:0.9rem 2rem;">
+                  <i class="fas fa-check-circle"></i> Reserve & Get Voucher
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Datalist for location auto-complete -->
+  <datalist id="locations-datalist"></datalist>
+
+  <!-- ================= VEHICLE FLEET & PRICING SHOWCASE ================= -->
+  <section id="fleet-showcase-section">
+    <div class="container">
+      <div class="text-center">
+        <span class="section-badge"><i class="fas fa-car"></i> Zenith Chauffeur Fleet</span>
+        <h2 class="section-title">Transparent Vehicle Classes & Fixed Rates</h2>
+        <p class="section-subtitle">
+          Every vehicle in our 1,200+ fleet is fully air-conditioned, commercially insured, GPS monitored, and sanitized prior to every pickup.
+        </p>
+
+        <!-- Category Filters -->
+        <div class="filter-pills-row">
+          <button class="filter-pill fleet-filter-btn active" data-category="all" id="filter-fleet-all">All Vehicles</button>
+          <button class="filter-pill fleet-filter-btn" data-category="compact" id="filter-fleet-compact">Eco Compacts</button>
+          <button class="filter-pill fleet-filter-btn" data-category="sedan" id="filter-fleet-sedan">Prime Sedans</button>
+          <button class="filter-pill fleet-filter-btn" data-category="suv" id="filter-fleet-suv">Luxury SUVs</button>
+          <button class="filter-pill fleet-filter-btn" data-category="van" id="filter-fleet-van">Passenger Vans</button>
+          <button class="filter-pill fleet-filter-btn" data-category="bus" id="filter-fleet-bus">Tourist Coaches</button>
+          <button class="filter-pill fleet-filter-btn" data-category="cargo" id="filter-fleet-cargo">Cargo & Movers</button>
+        </div>
+      </div>
+
+      <!-- Fleet Grid -->
+      <div class="fleet-grid" id="fleet-cards-grid">
+        <!-- Rendered by JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= INTERACTIVE DISTANCE FARE ESTIMATOR ================= -->
+  <section id="calculator-section">
+    <div class="container">
+      <div class="calc-container-box">
+        <div class="text-center">
+          <span class="section-badge"><i class="fas fa-calculator"></i> Real-Time Fare Estimator</span>
+          <h2 class="section-title">Drag To Calculate Any Journey</h2>
+          <p class="section-subtitle">
+            See the exact price difference between our Compacts, Sedans, Luxury Vans, and SUVs for any distance across the island.
+          </p>
+
+          <div class="slider-wrapper">
+            <div class="slider-value-display">
+              <span id="slider-km-value">75</span> <span>Kilometers</span>
+            </div>
+            <input type="range" min="10" max="450" value="75" step="5" class="custom-range-slider" id="distance-slider" aria-label="Distance in kilometers">
+          </div>
+        </div>
+
+        <div class="calc-rates-comparison" id="calc-rates-grid">
+          <!-- Dynamically populated comparison cards -->
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= POPULAR TOUR PACKAGES ================= -->
+  <section id="tour-packages-section">
+    <div class="container">
+      <div class="text-center">
+        <span class="section-badge"><i class="fas fa-mountain"></i> Curated Island Voyages</span>
+        <h2 class="section-title">Signature Sri Lanka Tour Packages</h2>
+        <p class="section-subtitle">
+          Unforgettable private holiday packages complete with dedicated tourist chauffeur, unlimited fuel, expressway tolls, and customized sightseeing stops.
+        </p>
+      </div>
+
+      <div class="tours-grid" id="tours-cards-grid">
+        <!-- Rendered by JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= SERVICES SECTION ================= -->
+  <section id="services-section">
+    <div class="container">
+      <div class="text-center">
+        <span class="section-badge"><i class="fas fa-concierge-bell"></i> Our Services</span>
+        <h2 class="section-title">Tailored Transportation For Every Need</h2>
+        <p class="section-subtitle">
+          From solo business commuters to international luxury tour expeditions, Zenith Cabs delivers unparalleled reliability.
+        </p>
+      </div>
+
+      <div class="services-grid">
+        <article class="service-card" id="service-airport">
+          <div class="service-icon-box"><i class="fas fa-plane-arrival"></i></div>
+          <span class="section-badge" style="font-size:0.75rem; margin-bottom:0.5rem;">24/7 Monitored</span>
+          <h3 class="service-title">Airport Express Transfers</h3>
+          <p class="service-desc">
+            Direct airport pickup & drops at Bandaranaike Intl Airport (CMB) and Mattala (HRI). Live flight tracking ensures your chauffeur is ready even with delayed flights.
+          </p>
+        </article>
+
+        <article class="service-card" id="service-outstation">
+          <div class="service-icon-box"><i class="fas fa-route"></i></div>
+          <span class="section-badge" style="font-size:0.75rem; margin-bottom:0.5rem;">Fixed Flat Rates</span>
+          <h3 class="service-title">Intercity & Outstation Drops</h3>
+          <p class="service-desc">
+            Point-to-point one-way or roundtrip transfers across all 25 districts in Sri Lanka. No middle transfers, no shared passengers, and guaranteed flat rates.
+          </p>
+        </article>
+
+        <article class="service-card" id="service-wedding">
+          <div class="service-icon-box"><i class="fas fa-crown"></i></div>
+          <span class="section-badge" style="font-size:0.75rem; margin-bottom:0.5rem;">Luxury Convoy</span>
+          <h3 class="service-title">Wedding & VIP Chauffeur Fleet</h3>
+          <p class="service-desc">
+            Arrive in timeless grandeur on your wedding day. Pristine white Mercedes-Benz sedans and matching entourage passenger vans with formal suited chauffeurs.
+          </p>
+        </article>
+
+        <article class="service-card" id="service-tours">
+          <div class="service-icon-box"><i class="fas fa-compass"></i></div>
+          <span class="section-badge" style="font-size:0.75rem; margin-bottom:0.5rem;">Certified Guides</span>
+          <h3 class="service-title">Islandwide Tour Chauffeurs</h3>
+          <p class="service-desc">
+            Explore heritage landmarks, wildlife national parks, and misty tea plantations with certified tourist chauffeurs who know every secret gem.
+          </p>
+        </article>
+
+        <article class="service-card" id="service-corporate">
+          <div class="service-icon-box"><i class="fas fa-building"></i></div>
+          <span class="section-badge" style="font-size:0.75rem; margin-bottom:0.5rem;">B2B Solutions</span>
+          <h3 class="service-title">Corporate Staff & Event Logistics</h3>
+          <p class="service-desc">
+            Contract transportation solutions for executive VIP delegations, hotel shuttles, and multinational corporate staff with monthly consolidated invoices.
+          </p>
+        </article>
+
+        <article class="service-card" id="service-cargo">
+          <div class="service-icon-box"><i class="fas fa-truck-moving"></i></div>
+          <span class="section-badge" style="font-size:0.75rem; margin-bottom:0.5rem;">Heavy Freight</span>
+          <h3 class="service-title">House Relocation & Freight Movers</h3>
+          <p class="service-desc">
+            Clean covered box trucks and light freight lorries with skilled loaders for apartment relocations, fragile shipments, and commercial cargo dispatch.
+          </p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= DRIVER PARTNER & BOOKING LOOKUP SECTION ================= -->
+  <section id="driver-and-tools-section">
+    <div class="container">
+      <div class="tools-grid">
+        <!-- Driver Partner Enrollment -->
+        <div class="partner-card" id="driver-registration-box">
+          <span class="section-badge"><i class="fas fa-id-badge"></i> Partner With Us</span>
+          <h2 style="font-size: 1.85rem; margin-bottom: 0.5rem;">Become a Zenith Driver Partner</h2>
+          <p style="color: var(--text-secondary); margin-bottom: 1.5rem; font-size: 0.95rem;">
+            Own a car, van, or bus? Partner with Sri Lanka’s highest-rated dispatch platform. Enjoy guaranteed weekly payouts, flexible hours, and airport priority runs.
+          </p>
+
+          <form id="driver-register-form">
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-bottom: 1rem;">
+              <div class="form-group">
+                <label for="driver-name" class="form-label">Full Name</label>
+                <input type="text" id="driver-name" class="form-control" placeholder="e.g. Kasun Silva" required>
+              </div>
+              <div class="form-group">
+                <label for="driver-phone" class="form-label">Phone Number</label>
+                <input type="tel" id="driver-phone" class="form-control" placeholder="+94 7X XXX XXXX" required>
+              </div>
+            </div>
+
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-bottom: 1.25rem;">
+              <div class="form-group">
+                <label for="driver-vehicle-model" class="form-label">Vehicle Model</label>
+                <input type="text" id="driver-vehicle-model" class="form-control" placeholder="e.g. Toyota Premio 2018" required>
+              </div>
+              <div class="form-group">
+                <label for="driver-plate-number" class="form-label">Registration No.</label>
+                <input type="text" id="driver-plate-number" class="form-control" placeholder="e.g. WP CAA-9922" required>
+              </div>
+            </div>
+
+            <button type="submit" class="btn btn-primary" id="driver-submit-btn" style="width: 100%;">
+              <i class="fas fa-paper-plane"></i> Submit Driver Application
+            </button>
+          </form>
+        </div>
+
+        <!-- Ride Status Lookup Tool -->
+        <div class="lookup-card" id="booking-lookup-box">
+          <span class="section-badge" style="color: var(--accent-cyan); border-color: rgba(6, 182, 212, 0.4); background: rgba(6, 182, 212, 0.1);">
+            <i class="fas fa-search-location"></i> Live Trip Lookup
+          </span>
+          <h2 style="font-size: 1.85rem; margin-bottom: 0.5rem;">Check Your Booking Status</h2>
+          <p style="color: var(--text-secondary); margin-bottom: 1.5rem; font-size: 0.95rem;">
+            Already reserved a ride? Enter your 6-digit Booking Reference Code (e.g. <code>ZN-849201</code>) or your phone number to view chauffeur assignment details.
+          </p>
+
+          <form id="booking-lookup-form">
+            <div class="form-group" style="margin-bottom: 1.5rem;">
+              <label for="lookup-ref-input" class="form-label">Booking Reference or Phone</label>
+              <div class="form-input-wrapper">
+                <i class="fas fa-ticket-alt input-icon"></i>
+                <input type="text" id="lookup-ref-input" class="form-control" placeholder="e.g. ZN-849201 or +94 77 123 4567" required>
+              </div>
+            </div>
+
+            <button type="submit" class="btn btn-secondary" id="lookup-submit-btn" style="width: 100%; border-color: var(--accent-cyan); color: var(--accent-cyan);">
+              <i class="fas fa-search"></i> Check Reservation Status
+            </button>
+          </form>
+
+          <div style="margin-top: 1.5rem; padding: 1rem; border-radius: var(--radius-sm); background: var(--bg-surface-elevated); font-size: 0.85rem; color: var(--text-secondary);">
+            <i class="fas fa-info-circle" style="color: var(--accent-cyan);"></i> Need emergency dispatch support? Call our 24/7 hotline directly at <strong>+94 11 289 9000</strong>.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= REVIEWS & FAQ SECTION ================= -->
+  <section id="reviews-and-faq-section">
+    <div class="container">
+      <div class="text-center">
+        <span class="section-badge"><i class="fas fa-star"></i> Traveler Reviews</span>
+        <h2 class="section-title">What Our Travelers Say About Us</h2>
+        <p class="section-subtitle">
+          Over 18,000 satisfied passengers trust Zenith Cabs for holiday tours, daily transits, and airport pickups.
+        </p>
+      </div>
+
+      <div class="testimonials-grid">
+        <div class="review-card">
+          <div class="stars-row"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+          <p class="review-quote">"Zenith Cabs made our Sri Lankan holiday completely stress-free! Our driver, Mr. Samantha, was courteous, drove smoothly on winding mountain roads, and pointed out scenic waterfalls."</p>
+          <div class="reviewer-profile">
+            <div class="reviewer-avatar"><i class="fas fa-user-tie"></i></div>
+            <div class="reviewer-info">
+              <h5>David & Sarah Jenkins</h5>
+              <p>London, UK • 5-Day Highlands Tour</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="review-card">
+          <div class="stars-row"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+          <p class="review-quote">"Booked an Executive Sedan for an urgent client conference in Galle. The car was spotless, arrived 10 minutes ahead of time, and the highway quote was genuinely transparent."</p>
+          <div class="reviewer-profile">
+            <div class="reviewer-avatar"><i class="fas fa-user"></i></div>
+            <div class="reviewer-info">
+              <h5>Pradeep Wickramasinghe</h5>
+              <p>Colombo • Expressway Prime Sedan</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="review-card">
+          <div class="stars-row"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+          <p class="review-quote">"Our midnight flight was delayed by 2 hours, but Zenith’s dispatch team tracked our flight and our chauffeur was waiting right outside the terminal with cold bottled water. 10/10 service!"</p>
+          <div class="reviewer-profile">
+            <div class="reviewer-avatar"><i class="fas fa-user-nurse"></i></div>
+            <div class="reviewer-info">
+              <h5>Elena Rostova</h5>
+              <p>Frankfurt, Germany • Airport Express</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- FAQ Accordion -->
+      <div style="margin-top: 5rem;">
+        <div class="text-center">
+          <span class="section-badge"><i class="fas fa-question-circle"></i> Got Questions?</span>
+          <h2 class="section-title">Frequently Asked Questions</h2>
+        </div>
+
+        <div class="faq-accordion">
+          <div class="faq-item open">
+            <button class="faq-question">
+              How does Zenith Cabs calculate trip fares?
+              <i class="fas fa-chevron-down"></i>
+            </button>
+            <div class="faq-answer">
+              Our fares are calculated transparently based on vehicle category and total travel distance. Each vehicle class has a base fare covering initial kilometers, followed by a flat rate per kilometer. Expressway toll charges are stated separately with no surprise surcharges.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">
+              Can I book a ride in advance for airport pickups?
+              <i class="fas fa-chevron-down"></i>
+            </button>
+            <div class="faq-answer">
+              Yes! Advance reservations are recommended for airport arrivals and departures. Provide your flight number during booking, and our dispatch desk will monitor live radar tracking so your chauffeur is ready even if your flight lands early or delayed.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">
+              Are the vehicles air-conditioned and insured?
+              <i class="fas fa-chevron-down"></i>
+            </button>
+            <div class="faq-answer">
+              100% of the Zenith fleet features modern air-conditioning (dual A/C on passenger vans and coaches). All vehicles carry comprehensive commercial passenger insurance, and chauffeurs undergo mandatory background checks.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">
+              What payment methods do you accept?
+              <i class="fas fa-chevron-down"></i>
+            </button>
+            <div class="faq-answer">
+              We accept Cash (LKR, USD, EUR, GBP), Major Credit/Debit Cards (Visa, Mastercard), Bank Transfer, and QR payment methods directly with the chauffeur upon trip completion.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= CONTACT & EMERGENCY DISPATCH ================= -->
+  <section id="contact-section" style="padding: 5rem 0; background: var(--bg-primary);">
+    <div class="container">
+      <div class="text-center">
+        <span class="section-badge"><i class="fas fa-headset"></i> 24/7 Operations Desk</span>
+        <h2 class="section-title">We Are Always Ready To Drive You</h2>
+        <p class="section-subtitle">
+          Reach our dedicated round-the-clock dispatch team anytime for instant bookings, inquiries, or route customisations.
+        </p>
+      </div>
+
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; margin-top: 2rem;">
+        <div style="padding: 2rem; background: var(--bg-surface); border-radius: var(--radius-md); border: 1px solid var(--border-subtle); text-align: center;">
+          <div style="font-size: 2rem; color: var(--accent-gold); margin-bottom: 0.75rem;"><i class="fas fa-phone-alt"></i></div>
+          <h3 style="font-size: 1.25rem; margin-bottom: 0.5rem;">24/7 Hotline</h3>
+          <p style="color: var(--text-secondary); margin-bottom: 1rem;">Direct reservation & emergency line</p>
+          <a href="tel:+94112899000" style="font-size: 1.25rem; font-weight: 800; color: var(--accent-gold);">+94 11 289 9000</a>
+        </div>
+
+        <div style="padding: 2rem; background: var(--bg-surface); border-radius: var(--radius-md); border: 1px solid var(--border-subtle); text-align: center;">
+          <div style="font-size: 2rem; color: #25d366; margin-bottom: 0.75rem;"><i class="fab fa-whatsapp"></i></div>
+          <h3 style="font-size: 1.25rem; margin-bottom: 0.5rem;">WhatsApp Dispatch</h3>
+          <p style="color: var(--text-secondary); margin-bottom: 1rem;">Instant messaging & live quote</p>
+          <a href="https://wa.me/94771234567" target="_blank" style="font-size: 1.25rem; font-weight: 800; color: #25d366;">+94 77 123 4567</a>
+        </div>
+
+        <div style="padding: 2rem; background: var(--bg-surface); border-radius: var(--radius-md); border: 1px solid var(--border-subtle); text-align: center;">
+          <div style="font-size: 2rem; color: var(--accent-gold); margin-bottom: 0.75rem;"><i class="fas fa-map-marked-alt"></i></div>
+          <h3 style="font-size: 1.25rem; margin-bottom: 0.5rem;">Headquarters</h3>
+          <p style="color: var(--text-secondary); margin-bottom: 1rem;">Level 4, Zenith Tower, 142 High Level Rd</p>
+          <span style="font-size: 1rem; font-weight: 700; color: var(--text-primary);">Colombo 05, Sri Lanka</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= FOOTER ================= -->
+  <footer id="main-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <div class="brand-logo" style="margin-bottom: 1.25rem;">
+            <div class="brand-logo-icon"><i class="fas fa-taxi"></i></div>
+            <div>
+              <div class="brand-title">ZENITH<span>CABS</span></div>
+              <div class="brand-subtitle">& LUXURY TOURS</div>
+            </div>
+          </div>
+          <p style="font-size: 0.9rem; line-height: 1.7; color: var(--text-secondary); margin-bottom: 1.5rem;">
+            Sri Lanka’s most trusted private passenger fleet. Providing seamless airport transfers, corporate transport, family vacation vans, and tailor-made scenic island tours 24 hours a day, 365 days a year.
+          </p>
+          <div style="display: flex; gap: 0.75rem;">
+            <a href="#" style="width: 36px; height: 36px; border-radius: 50%; background: rgba(255,255,255,0.06); display: flex; align-items: center; justify-content: center; color: var(--text-primary);"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" style="width: 36px; height: 36px; border-radius: 50%; background: rgba(255,255,255,0.06); display: flex; align-items: center; justify-content: center; color: var(--text-primary);"><i class="fab fa-instagram"></i></a>
+            <a href="#" style="width: 36px; height: 36px; border-radius: 50%; background: rgba(255,255,255,0.06); display: flex; align-items: center; justify-content: center; color: var(--text-primary);"><i class="fab fa-tripadvisor"></i></a>
+            <a href="#" style="width: 36px; height: 36px; border-radius: 50%; background: rgba(255,255,255,0.06); display: flex; align-items: center; justify-content: center; color: var(--text-primary);"><i class="fab fa-whatsapp"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Vehicle Classes</h4>
+          <ul class="footer-links">
+            <li><a href="#fleet-showcase-section">Eco Compacts (Alto / Wagon R)</a></li>
+            <li><a href="#fleet-showcase-section">Prime Sedans (Axio / Premio)</a></li>
+            <li><a href="#fleet-showcase-section">Luxury SUVs (Harrier / Vezel)</a></li>
+            <li><a href="#fleet-showcase-section">Grand Passenger Vans (KDH)</a></li>
+            <li><a href="#fleet-showcase-section">VIP High-Roof Luxury Vans</a></li>
+            <li><a href="#fleet-showcase-section">Tourist Coaches (30 Seater)</a></li>
+            <li><a href="#fleet-showcase-section">Cargo & House Relocation</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Tour Destinations</h4>
+          <ul class="footer-links">
+            <li><a href="#tour-packages-section">Kandy & Cultural Triangle</a></li>
+            <li><a href="#tour-packages-section">Nuwara Eliya & Ella Trails</a></li>
+            <li><a href="#tour-packages-section">Galle Fort & Mirissa Coast</a></li>
+            <li><a href="#tour-packages-section">Yala & Udawalawe Safaris</a></li>
+            <li><a href="#tour-packages-section">Sigiriya Lion Rock Citadel</a></li>
+            <li><a href="#tour-packages-section">Jaffna Northern Heritage</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Quick Contact</h4>
+          <div class="footer-contact-item">
+            <i class="fas fa-map-marker-alt"></i>
+            <div>142 High Level Rd, Colombo 05, Sri Lanka</div>
+          </div>
+          <div class="footer-contact-item">
+            <i class="fas fa-phone-alt"></i>
+            <div>+94 11 289 9000 / +94 77 123 4567</div>
+          </div>
+          <div class="footer-contact-item">
+            <i class="fas fa-envelope"></i>
+            <div>dispatch@zenithcabs.lk</div>
+          </div>
+          <div class="footer-contact-item">
+            <i class="fas fa-plane-departure"></i>
+            <div>Airport Lounge: Katunayake BIA Concourse</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          &copy; 2026 ZENITH CABS & TOURS PVT LTD. All Rights Reserved.
+        </div>
+        <div style="display:flex; gap: 1.5rem;">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">Passenger Safety Charter</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ================= FLOATING ACTION BUTTONS ================= -->
+  <div class="floating-action-container">
+    <a href="https://wa.me/94771234567?text=Hi%20Zenith%20Cabs,%20I%20would%20like%20to%20reserve%20a%20ride" target="_blank" class="floating-btn floating-whatsapp" title="Chat on WhatsApp" id="floating-whatsapp-btn">
+      <i class="fab fa-whatsapp"></i>
+    </a>
+    <a href="tel:+94112899000" class="floating-btn floating-call" title="Emergency Call Dispatch" id="floating-call-btn">
+      <i class="fas fa-phone-alt"></i>
+    </a>
+  </div>
+
+  <!-- ================= REUSABLE GLOBAL MODAL ================= -->
+  <div class="modal-overlay" id="generic-modal" role="dialog" aria-modal="true">
+    <div class="modal-content">
+      <button class="modal-close-btn" id="generic-modal-close" aria-label="Close Modal">
+        <i class="fas fa-times"></i>
+      </button>
+      <div id="generic-modal-body">
+        <!-- Injected via app.js -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="js/data.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
